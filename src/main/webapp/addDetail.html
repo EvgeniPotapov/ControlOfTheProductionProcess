@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<link rel="stylesheet" href="styleChange.css">
+<link rel="icon" href="img\36575-api-icon-clipart.png" type="image/x-icon" />
+<title>Добавление деталей</title>
+</head>
+<body>
+
+<div id=page>
+
+<div id=navigation>
+
+	<ul class="menu header__menu">
+		<li><a href="addDetail.html"  class="menu__item">Добавление детали</a></li>
+		<li><a href="stageDetail.html"  class="menu__item">Стадия детали</a></li>
+		<li><a href="ChangeStageDetail.html"  class="menu__item">Изменение стадии</a></li>
+	</ul>
+	
+	</div>
+ <form  class = "form" name="add" method="post" action="ProcessingAdd">
+   <div class="inpchec">
+  <p><b>Заводской номер:</b>
+   <input name="partIndex" type="text" size="40">
+  </p>
+   <p><b>Номер детали:</b>
+   <input name="partNumber" type="text" size="40">
+  </p>
+  <p><b>Вид детали:</b><Br>
+   <input type="radio" name="name" value="Колонна"> Колонна<Br>
+   <input type="radio" name="name" value="Балка"> Балка<Br>
+   <input type="radio" name="name" value="Связь"> Связь<Br>
+   <input type="radio" name="name" value="Пути перемещения"> Пути перемещения<Br>
+   <input type="radio" name="name" value="Панель"> Панель<Br>
+   <input type="radio" name="name" value="Доборный лист"> Доборный лист<Br>
+  </p>
+  <p><input class="knop" type="submit" value="Отправить">
+   <input class="knop" type="reset" value="Очистить"></p>
+   </div>
+  </form>
+  </div>
+ </body>
+</html>
